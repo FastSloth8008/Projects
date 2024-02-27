@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Proxima Nova;
+            background-image: url('/static/image1.jpg'); /* Update the path to your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(6, 6, 6, 0.1); /* Translucent black background */
+            padding: 1rem;
+            text-align: left;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+            font-size: 24px;
+        }
+
+        header a:hover {
+            color: transparent;
+            background: linear-gradient(90deg, #50e5ff, #2e82cc); /* Apply gradient to background */
+            background-clip: text;
+            -webkit-background-clip: text; /* For Safari/Chrome */
+            border-bottom: 2px solid ;
+            border-image: linear-gradient(90deg, #1dfff4, #02466e);
+        }
+
+        .search-container {
+            text-align: center;
+            max-width: 800px;
+            padding-right: 650px;
+            margin-top: 250px;
+            text-align: left; 
+        }
+
+        .search-container h1 {
+            font-size: 60px; 
+            color: #fff; /* White text color */
+            text-align: left; /* Add text-align property */
+        }
+
+        .search-container h3 {
+            font-weight: 300; /* Adjust the value to make it less bold */
+            font-size: 20px;
+        }
+
+        #btn {
+            margin-right: 740px;
+            font-size: 20px; 
+            border: 2px solid; /* Remove the color property */
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff; /* White text color */
+            /* Gradient Border */
+            border-image: linear-gradient(90deg, #1dfff4, #000000); /* Green gradient colors */
+            border-image-slice: 1;
+            text-align: left; /* Add text-align property */
+        }
+
+        #btn:hover {
+            border-image: linear-gradient(90deg, #1dfff4, #28fdf3); /* Green gradient colors */
+            border-image-slice: 1;
+            color: #ffffff;
+            box-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+    </header>
+
+    <div class="search-container">
+        <h1>Empower Your Finances</h1>
+        <h3>Detect Fraud in Transactions Effectively with Our Service</h3>
+    </div>
+    <a href="{{ url_for('webpage1') }}"><h2 id="btn">Get Started</h2></a> <!-- Link to the root URL -->
+</body>
+</html>

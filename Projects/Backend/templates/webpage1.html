@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+</head>
+<body>
+    <h1>Transaction Details</h1>
+    <form action="/webpage1" method="post"> <!-- Updated action attribute -->
+        <div class="input">
+            <label for="amount">Amount:</label><br>
+            <input type="text" id="amount" name="amount" required><br> <!-- Updated name attribute -->
+        </div>
+        
+        <div class="input">
+            <label for="oldbalanceOrg">Old Balance Origin:</label><br>
+            <input type="text" id="oldbalanceOrg" name="oldbalanceOrg" required><br> <!-- Updated name attribute -->
+        </div>
+        
+        <div class="input">
+            <label for="newbalanceOrig">New Balance Origin:</label><br>
+            <input type="text" id="newbalanceOrig" name="newbalanceOrig" required><br> <!-- Updated name attribute -->
+        </div>
+        
+        <div class="input">
+            <label for="oldbalanceDest">Old Balance Destination:</label><br>
+            <input type="text" id="oldbalanceDest" name="oldbalanceDest" required><br> <!-- Updated name attribute -->
+        </div>
+        
+        <div class="input">
+            <label for="newbalanceDest">New Balance Destination:</label><br>
+            <input type="text" id="newbalanceDest" name="newbalanceDest" required><br> <!-- Updated name attribute -->
+        </div>
+        
+        <div class="action">
+            <button type="submit" class="action-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
